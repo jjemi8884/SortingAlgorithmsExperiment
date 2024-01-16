@@ -2,7 +2,6 @@ import Sort.BucketSort;
 
 import java.util.Random;
 
-
 public class main {
     public static void main(String [] args){
         int [] array = new int [20];
@@ -21,6 +20,5 @@ public class main {
         for (int i = 0; i < array.length; i++){
             System.out.print(array[i] + ", ");
         }
-
     }//end main
 }//end main class

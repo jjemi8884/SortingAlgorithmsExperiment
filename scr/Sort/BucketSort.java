@@ -1,11 +1,11 @@
 package Sort;
 
 public class BucketSort implements SortInterface {
-    private Node [] buckets;
-    private int [] negativeArray;
-    private static final int LARGESTNUMBER = 40000;
+    private Node [] buckets; //where to store the sorted items
+    private int [] negativeArray; // for future use
+    private static final int LARGESTNUMBER = 40000; // the largest number that will be pulled
 
-       /**
+    /**
      * this will initialize the array used in the class
      * @param array array of integers
      */
@@ -15,14 +15,13 @@ public class BucketSort implements SortInterface {
 
     /**
      * The sort the given array of integers
-     *
      * @param array of integers to be sorted.
      */
     @Override
     public void sort(int [] array) {
         //create n buckets []
         createBuckets(array.length);
-        //insert into buckets and sort buckets with linkedlist
+        //insert into buckets and sort buckets with a linked list
         insert(array);
         //concatenate the buckets.
         concat(array);
@@ -30,25 +29,22 @@ public class BucketSort implements SortInterface {
 
     /**
      * create the bucket array that will be used to sort the integers
-     *
      * @param arrayLength
      */
     public void createBuckets(int arrayLength){
         buckets = new Node[arrayLength];
     }
 
+    /**
+     * The private method to insert the numbers from the array into the bucket
+     * @param array
+     */
     private void insert(int [] array){
-        int negCount = 0;
         Node rootNode = new Node(0);
         Node lastNode = rootNode;
         for(int i = 0; i < array.length; i++){
-            if (array[i] < 0 ){
-                negCount++;
-                Node negNode = new Node(array[i], lastNode);
-            }else{
                 int num = array[i];
                 placeNode(num, array.length);
-            }
         }
     }
 
@@ -58,13 +54,12 @@ public class BucketSort implements SortInterface {
      */
     private void placeNode(int num, int arrayLength){
         //check if a node is empty
-        double tempnum  = num * arrayLength/LARGESTNUMBER;
-        int index = (int) Math.round(tempnum);
+        double tempNum  = num * arrayLength/LARGESTNUMBER;
+        int index = (int) Math.round(tempNum);
        //System.out.println("Bucket #" + index + " and number is " + num);
         if(buckets[index] == null){ //node empty, we can store our number
             buckets[index] = new Node(num);
         }else{
-
             Node currentBucket = buckets[index];
             Node previousBucket = null;
 
@@ -84,8 +79,6 @@ public class BucketSort implements SortInterface {
                 Node n = new Node(num, currentBucket);
                 previousBucket.setNextLink(n);
             }
-
-
         }
     }
 
@@ -97,7 +90,6 @@ public class BucketSort implements SortInterface {
         int arrayIndex = 0;
         int bucketIndex = 0;
         while( bucketIndex < buckets.length){
-
                 if(buckets[bucketIndex] != null){
                     array[arrayIndex] = buckets[bucketIndex].getData();
                     arrayIndex++;
@@ -112,8 +104,11 @@ public class BucketSort implements SortInterface {
         }// end for
 
     }//end concat
+
     /**
-     *
+     * Class for the nodes that will be used in each bucket
+     * They will be linked list nodes with only a link to the next node
+     * The first node in the bucket will be the node linked in the array
      */
     private class Node{
         private int data;
@@ -122,13 +117,19 @@ public class BucketSort implements SortInterface {
         /**
          * node constructor with only data supplies
          * @param data int type data to store
-         *
          */
         public Node(int data){
 
             this(data, null);
         }//end node constructor
 
+
+        /**
+         * The second node constructor which allows for assignment
+         * of the next link.
+         * @param data that will be stored in the node
+         * @param nextLink is the pointer to the next node
+         */
         public Node(int data, Node nextLink){
             this.data = data;
             this.setNextLink(nextLink);
