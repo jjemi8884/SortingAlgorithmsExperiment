@@ -25,7 +25,7 @@ public class BucketSort implements SortInterface {
         insert(array);
         //concatenate the buckets.
         concat(array);
-    }
+    }//end sort constructor
 
     /**
      * create the bucket array that will be used to sort the integers
@@ -33,7 +33,7 @@ public class BucketSort implements SortInterface {
      */
     public void createBuckets(int arrayLength){
         buckets = new Node[arrayLength];
-    }
+    }//end createBuckets
 
     /**
      * The private method to insert the numbers from the array into the bucket
@@ -45,8 +45,8 @@ public class BucketSort implements SortInterface {
         for(int i = 0; i < array.length; i++){
                 int num = array[i];
                 placeNode(num, array.length);
-        }
-    }
+        }//end for
+    }//end insert
 
     /**
      * method to place the node in the bucket array
@@ -78,9 +78,9 @@ public class BucketSort implements SortInterface {
                 }//end while
                 Node n = new Node(num, currentBucket);
                 previousBucket.setNextLink(n);
-            }
-        }
-    }
+            }//end if
+        }//end if
+    }//end place node
 
     /**
      * Method to pull from the bucket and resort the array
@@ -102,7 +102,6 @@ public class BucketSort implements SortInterface {
                 }//end if
             bucketIndex++;
         }// end for
-
     }//end concat
 
     /**
@@ -119,7 +118,6 @@ public class BucketSort implements SortInterface {
          * @param data int type data to store
          */
         public Node(int data){
-
             this(data, null);
         }//end node constructor
 
@@ -152,7 +150,7 @@ public class BucketSort implements SortInterface {
             int temp = this.data;
             this.data = data;
             return temp;
-        }
+        }//end setData
 
         /***
          * the getter for the next node
@@ -160,7 +158,7 @@ public class BucketSort implements SortInterface {
          */
         public Node getNextNode(){
             return nextLink;
-        }
+        }//end getNextNode
 
         /**
          * set the next link in the node.
@@ -168,6 +166,6 @@ public class BucketSort implements SortInterface {
          */
         public void setNextLink(Node nextLink){
             this.nextLink = nextLink;
-        }
+        }//end setNextLink
     }
 }
