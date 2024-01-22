@@ -33,6 +33,6 @@ public class QuickSortFirst implements SortInterface{
         for (int idx = lowPoint; idx <= highPoint; idx++) {
 
         }
-
+        return 0;
     }
 }
