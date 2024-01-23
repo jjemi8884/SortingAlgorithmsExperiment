@@ -5,13 +5,16 @@ import java.util.Random;
 
 public class main {
     public static void main(String [] args){
-        int [] array = new int [15];
+        int [] array = new int [40];
         Random rand = new Random();
 
         for (int i = 0; i < array.length; i++){
             int temp = rand.nextInt(100);
             array[i] = temp;
         }
+
+
+
         System.out.println("Original Array");
         printArray(array);
 

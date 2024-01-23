@@ -38,7 +38,7 @@ public class QuickSortMo3 implements SortInterface{
      */
     private void sort(int first, int last, int[] array) {
 
-        if((last - first) + 1 <= MAX_SIZE) {
+        if((last - first) + 1 < MAX_SIZE) {
             insertionSort(first, last, array);
         }else{
             int pivotIndex = pivotSort(first, last, array);
@@ -51,26 +51,28 @@ public class QuickSortMo3 implements SortInterface{
      * This method will take a pivot and sort all items less than the pivot to the left.
      * All items that are larger than the pivot to the right and reinsert the pivot
      * in its correct spot in the array by swapping with the next large number.
-     * @param firstIndex cannot equal zero and less than last index
-     * @param lastIndex less than array.lenght - 1
+     * @param firstIndex cannot equal zero and less than the last index
+     * @param lastIndex less than array length - 1
      * @param array the pointer to the array that we are sorting
      * @return the index to the pivot that we insert back in the array at the correct spot.
      */
     private int pivotSort(int firstIndex, int lastIndex, int [] array){
-        int pivotIndex = lastIndex/2;
+        int pivotIndex = (firstIndex + lastIndex)/2;
         mOThree(firstIndex,pivotIndex, lastIndex, array);
 
         //putting the pivot in the second to last entry!
         swap(pivotIndex, lastIndex -1, array);
-        //assume last index is already in the larger group due to Mo3
-        int fromLeftIndex  = firstIndex + 1; // start at +1 cause we know the pivot is larger form Mo3
+        //assume the last index is already in the larger group due to Mo3
+        int fromLeftIndex  = firstIndex + 1; // start at +1 because we know the pivot is larger form Mo3
         int fromRightIndex = lastIndex - 2;
         pivotIndex = lastIndex - 1;
-        int pivotValue = array[lastIndex - 1];
+        int pivotValue = array[pivotIndex];
         boolean done = false;
-        printArray(array);
+
+        //iterate the array finding the highs and lows to swap
         while(!done) {
-            //move the fromleftIndex right until find a value higher than pivot
+
+            //move the fromLeftIndex right until find a value higher than pivot
             //should find one since it is
             while (pivotValue > array[fromLeftIndex]) {
                 fromLeftIndex++;
@@ -88,19 +90,21 @@ public class QuickSortMo3 implements SortInterface{
                 done = true;
             }//end if
         }//end while
-        printArray(array);
-
         swap(pivotIndex, fromLeftIndex, array);
         pivotIndex = fromLeftIndex;
         return pivotIndex;
     }//end pivot sort
 
+    /**
+     * Method to print the array for troubleshooting
+     * @param array is the array to print out in a single line
+     */
     public static void printArray(int [] array){
         for (int i = 0; i < array.length; i++){
             System.out.print(array[i] + ", ");
-        }
+        }//end for
         System.out.println();
-    }
+    }//end printArray
 
     /**
      * Method to inset in order because it is not wise to do the quicksort with less than four elements.
@@ -137,7 +141,7 @@ public class QuickSortMo3 implements SortInterface{
     /**
      * This method will choose the first, middle and last index of an array
      * identify which of the three numbers are the median, then shift that pivot to the last index.
-     * all the while ordering the arrays in the correct order.
+     * All the while ordering the arrays in the correct order.
      * Precondition - This assumes that there are at least three elements in the array.
      * @param array of integers
      */
@@ -150,7 +154,7 @@ public class QuickSortMo3 implements SortInterface{
         if(array[middle] < array[first]){
             swap(middle, first, array);
         }
-        //know that middle is smaller than first or they are the same
+        //know that middle is smaller than first, or they are the same
         if(array[middle] > array[last]) {
             swap(middle, last, array);
         }
@@ -166,9 +170,8 @@ public class QuickSortMo3 implements SortInterface{
      * @param array the array to swap the elements
      */
     private void swap(int first, int second, int [] array){
-        System.out.println("SWAP  " + array[first] + " and " + array[second] + "At indexs " + first + " frist " + second + " second");
-        int temp = array[second];
-        array[second] = array[first];
-        array[first] = temp;
+       int temp = array[second];
+       array[second] = array[first];
+       array[first] = temp;
     }
 }//end class
