@@ -1,6 +1,8 @@
 import Sort.BucketSort;
 import Sort.QuickSortMo3;
 
+
+
 import java.util.Random;
 
 public class main {
@@ -14,6 +16,7 @@ public class main {
         }
 
 
+<<<<<<< HEAD
 
         System.out.println("Original Array");
         printArray(array);
@@ -36,6 +39,8 @@ public class main {
     }//end main
 
     public static void printArray(int [] array){
+=======
+>>>>>>> f0a2d120864cc47dbeec49eca7e7871675259cee
         for (int i = 0; i < array.length; i++){
             System.out.print(array[i] + ", ");
         }
