@@ -37,7 +37,6 @@ public class QuickSortMo3 implements SortInterface{
      * @param array of integers to be sorted.
      */
     private void sort(int first, int last, int[] array) {
-
         if((last - first) + 1 < MAX_SIZE) {
             insertionSort(first, last, array);
         }else{
@@ -127,16 +126,14 @@ public class QuickSortMo3 implements SortInterface{
      */
     private void insertInOrder(int value, int firstIndex, int lastIndex, int [] array){
         //take the last index and make room to insert
-
         int currentIndex = lastIndex;
 
         while(currentIndex >= firstIndex && value < array[currentIndex]){
             array[currentIndex + 1] = array[currentIndex];
             currentIndex--;
-        }
+        }//end while
         array[currentIndex + 1] = value;
-
-    }
+    }//end instertInOrder
 
     /**
      * This method will choose the first, middle and last index of an array
@@ -146,21 +143,18 @@ public class QuickSortMo3 implements SortInterface{
      * @param array of integers
      */
     private void mOThree(int first, int middle, int last, int [] array){
-
         if(array[last] < array[first]) {
             swap(last, first, array);
-        }
+        }//end if
         //known that first is smaller or last and first are the same
         if(array[middle] < array[first]){
             swap(middle, first, array);
-        }
+        }//end if
         //know that middle is smaller than first, or they are the same
         if(array[middle] > array[last]) {
             swap(middle, last, array);
-        }
+        }//end if
         //know that middle array is smaller that last array
-
-
     }//end mOThree
 
     /**
@@ -173,5 +167,5 @@ public class QuickSortMo3 implements SortInterface{
        int temp = array[second];
        array[second] = array[first];
        array[first] = temp;
-    }
+    }//end swap
 }//end class

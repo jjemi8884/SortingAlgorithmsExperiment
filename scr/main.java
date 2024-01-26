@@ -1,4 +1,5 @@
 import Sort.BucketSort;
+import Sort.Counting;
 import Sort.QuickSortMo3;
 
 
@@ -7,7 +8,7 @@ import java.util.Random;
 
 public class main {
     public static void main(String [] args){
-        int [] array = new int [40];
+        int [] array = new int [10];
         Random rand = new Random();
 
         for (int i = 0; i < array.length; i++){
@@ -16,7 +17,7 @@ public class main {
         }
 
 
-<<<<<<< HEAD
+
 
         System.out.println("Original Array");
         printArray(array);
@@ -28,9 +29,11 @@ public class main {
         //System.out.print("Bucket Sort Array\n");
         //printArray(bucketArray);
 
-        QuickSortMo3 s1 = new QuickSortMo3(mO3Array);
-        System.out.println("QuickSortMo3 Array\n");
-        printArray(mO3Array);
+//        QuickSortMo3 s1 = new QuickSortMo3(mO3Array);
+//
+        Counting s3 = new Counting(array);
+        System.out.println("Counting array");
+        printArray(array);
 
 
 
@@ -39,8 +42,7 @@ public class main {
     }//end main
 
     public static void printArray(int [] array){
-=======
->>>>>>> f0a2d120864cc47dbeec49eca7e7871675259cee
+
         for (int i = 0; i < array.length; i++){
             System.out.print(array[i] + ", ");
         }
