@@ -1,7 +1,4 @@
-import Sort.BucketSort;
-import Sort.Counting;
-import Sort.QuickSortMo3;
-import Sort.ShellSort;
+import Sort.*;
 import SortTester.SortingClassNode;
 import SortTester.TestResultMatrix;
 
@@ -10,6 +7,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
+import java.util.random.RandomGenerator;
 
 public class main {
     public static void main(String [] args) {
@@ -19,7 +17,10 @@ public class main {
             tm.addSortClass(n);
         }//end for loop
         Iterator<SortingClassNode> itr = tm.iterator();
+        int [] origin = testArray();
+
         while(itr.hasNext()){
+            int[] test = origin.clone();
             SortingClassNode n = itr.next();
             System.out.println(n.getName());
             n.addScore(15);
@@ -44,4 +45,13 @@ public class main {
         }//end for
         return nameList;
     }//end createMatrix
+    public static int [] testArray() {
+        int[] array = new int[32560];
+        Random r = new Random();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = r.nextInt(40000);
+        }//end for
+        return array;
+    }
 }//end main class
+
