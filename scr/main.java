@@ -1,51 +1,47 @@
 import Sort.BucketSort;
 import Sort.Counting;
 import Sort.QuickSortMo3;
+import Sort.ShellSort;
+import SortTester.SortingClassNode;
+import SortTester.TestResultMatrix;
 
 
-
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Random;
 
 public class main {
-    public static void main(String [] args){
-        int [] array = new int [10];
-        Random rand = new Random();
-
-        for (int i = 0; i < array.length; i++){
-            int temp = rand.nextInt(100);
-            array[i] = temp;
-        }
-
-
-
-
-        System.out.println("Original Array");
-        printArray(array);
-
-       // int [] bucketArray = array.clone();
-        int [] mO3Array = array.clone();
-        //System.out.println("");
-        //BucketSort s = new BucketSort(bucketArray);
-        //System.out.print("Bucket Sort Array\n");
-        //printArray(bucketArray);
-
-//        QuickSortMo3 s1 = new QuickSortMo3(mO3Array);
-//
-        Counting s3 = new Counting(array);
-        System.out.println("Counting array");
-        printArray(array);
-
-
-
-
-
+    public static void main(String [] args) {
+        ArrayList<String> names = createMatrix();
+        TestResultMatrix tm = new TestResultMatrix(names.size());
+        for(String n: names){
+            tm.addSortClass(n);
+        }//end for loop
+        Iterator<SortingClassNode> itr = tm.iterator();
+        while(itr.hasNext()){
+            SortingClassNode n = itr.next();
+            System.out.println(n.getName());
+            n.addScore(15);
+        }//end while
     }//end main
 
-    public static void printArray(int [] array){
-
-        for (int i = 0; i < array.length; i++){
-            System.out.print(array[i] + ", ");
-        }
-        System.out.println();
-    }
+    /**
+     * Method will go into the sort package and gather all the names of the
+     * sort classes and create the arrayList to use for them.
+     * It ignores the interfaces.
+     */
+    public static ArrayList<String> createMatrix(){
+        ArrayList<String> nameList = new ArrayList<>();
+        File f = new File("scr/Sort");
+        File[] a = f.listFiles();
+        for(int i = 0; i < a.length; i++){
+            String name = a[i].getName();
+            if(!name.contains("Interface")){
+                name = name.substring(0,name.length() - 5);
+                nameList.add(name);
+            }//end
+        }//end for
+        return nameList;
+    }//end createMatrix
 }//end main class

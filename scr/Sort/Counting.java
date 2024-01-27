@@ -33,7 +33,7 @@ public class Counting implements SortInterface{
             sortArray(array, newArray);
         }//end if
     }//end sort
-    
+
     /**
      * THis method will sort the array into a new array which will use the index
      * and the newArray to in the proper index in the output array
