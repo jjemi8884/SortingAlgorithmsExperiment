@@ -21,11 +21,11 @@ public class SortingClassNode<T> implements Iterable<Integer> {
 
     /**
      * default constructor for the node
-     * used the default value of 75 test
+     * used the default value of 70 test
      * @param name name of sorting class
      */
     public SortingClassNode(String name){
-        this(name, 75);
+        this(name, 70);
     }//end constructor
 
     /**

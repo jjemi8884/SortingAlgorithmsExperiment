@@ -5,13 +5,13 @@ public class BucketSort implements SortInterface {
     private int [] negativeArray; // for future use
     private static final int LARGESTNUMBER = 40000; // the largest number that will be pulled
 
-    /**
-     * this will initialize the array used in the class
-     * @param array array of integers
-     */
-    public BucketSort(int [] array ){
-        this.sort(array);
-    }//end bucket sort constructor
+//    /**
+//     * this will initialize the array used in the class
+//     * @param array array of integers
+//     */
+//    public BucketSort(int [] array ){
+//
+//    }//end bucket sort constructor
 
     /**
      * The sort the given array of integers
