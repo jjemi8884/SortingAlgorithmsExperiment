@@ -2,13 +2,13 @@ package Sort;
 
 public class InsertionSort implements SortInterface {
 
-    /**
-     * Uses the passed in array to call a sort on the integers
-     * @param array an array of integers
-     */
-    public InsertionSort(int[] array) {
-        this.sort(array);
-    }
+//    /**
+//     * Uses the passed in array to call a sort on the integers
+//     * @param array an array of integers
+//     */
+//    public InsertionSort(int[] array) {
+//        this.sort(array);
+//    }
 
 
     /**

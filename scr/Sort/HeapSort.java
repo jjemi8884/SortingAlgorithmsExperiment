@@ -2,13 +2,13 @@ package Sort;
 
 public class HeapSort implements SortInterface{
 
-    /**
-     * Will call the sort method with the passed in array
-     * @param array array of integers to be sorted
-     */
-    public HeapSort(int[] array) {
-        this.sort(array);
-    }// end HeapSort constructor
+//    /**
+//     * Will call the sort method with the passed in array
+//     * @param array array of integers to be sorted
+//     */
+//    public HeapSort(int[] array) {
+//        this.sort(array);
+//    }// end HeapSort constructor
 
     /**
      * The main call to sort the given array of integers

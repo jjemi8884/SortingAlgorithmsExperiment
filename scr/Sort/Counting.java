@@ -2,16 +2,15 @@ package Sort;
 
 public class Counting implements SortInterface{
 
-    private int [] oldArray;
+
 
     /**
      * constructor for the counting sort class that will accept an array
      * this class only manipulated the array and does not return anything else.
      * @param a is the array that will be passed to the class for sorting
      */
-    public Counting(int[] a){
-        oldArray = new int [a.length];
-        sort(a);
+    public Counting(){
+
     }
 
     /**
@@ -23,14 +22,15 @@ public class Counting implements SortInterface{
     @Override
     public void sort(int[] array) {
         //Ensure the array is not empty
+        int[] temp= new int [array.length];
         if(array != null) {
             //find the max
-            int max = findMax(array);
+            int max = findMax(array, temp);
             //make the new array
             int [] newArray = new int[max + 1];
             countArray(array, newArray);
             cumulativeSum(newArray);
-            sortArray(array, newArray);
+            sortArray(array, newArray, temp);
         }//end if
     }//end sort
 
@@ -42,7 +42,7 @@ public class Counting implements SortInterface{
      * @param newArray the index array
      * @return the new output array
      */
-    private void sortArray(int [] array, int [] newArray){
+    private void sortArray(int [] array, int [] newArray, int [] oldArray){
         //make new output array to be copied over
         for(int i = oldArray.length - 1 ; i >= 0; i--){
             int value = oldArray[i];
@@ -86,10 +86,10 @@ public class Counting implements SortInterface{
      * @param array that the method will find the max of
      * @return the max number
      */
-    private int findMax(int[] array){
+    private int findMax(int[] array, int [] oldArray){
         int max = array[0];
         for(int i = 0; i < array.length; i++){
-            this.oldArray[i] = array[i];
+            oldArray[i] = array[i];
             if(max < array[i]){
                 max = array[i];
             }//end if
