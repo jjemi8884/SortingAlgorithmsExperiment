@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 public class MergeSort implements SortInterface {
 
-    /**
-     * Uses the passed in array and calls a sort on it
-     * @param arrayOfInts an array of integers
-     */
-    public MergeSort(int[] arrayOfInts) {
-        this.sort(arrayOfInts);
-    }
+//    /**
+//     * Uses the passed in array and calls a sort on it
+//     * @param arrayOfInts an array of integers
+//     */
+//    public MergeSort(int[] arrayOfInts) {
+//        this.sort(arrayOfInts);
+//    }
 
 
     /**

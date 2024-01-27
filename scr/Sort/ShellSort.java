@@ -1,10 +1,10 @@
 package Sort;
 
 public class ShellSort implements SortInterface {
-
-    public ShellSort(int[] a) {
-        sort(a);
-    }
+//
+//    public ShellSort(int[] a) {
+//        sort(a);
+//    }
 
     /**
      * Method to iterate through the list a certain distance between indexes

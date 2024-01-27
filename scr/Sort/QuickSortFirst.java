@@ -2,13 +2,13 @@ package Sort;
 
 public class QuickSortFirst implements SortInterface{
 
-    /**
-     * Calls a quick sort onto the passed in array
-     * @param intArray array of integers
-     */
-    public QuickSortFirst(int[] intArray) {
-        this.sort(intArray);
-    }
+//    /**
+//     * Calls a quick sort onto the passed in array
+//     * @param intArray array of integers
+//     */
+//    public QuickSortFirst(int[] intArray) {
+//        this.sort(intArray);
+//    }
 
 
     /**
