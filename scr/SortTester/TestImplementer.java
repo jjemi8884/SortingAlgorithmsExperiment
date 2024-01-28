@@ -46,6 +46,7 @@ public class TestImplementer {
         // Iterate through each sorting algorithm
         for (SortInterface sortingClass: sortingAlgorithms) {
             String name = sortingClass.getClass().getName();
+            name = name.substring(5,name.length());
             // Get a new list of 70 test arrays
             ArrayList<int[]> testArrays = testGenerator.getCloneArrayList();
             // Iterate through each test array

@@ -1,6 +1,12 @@
 package SortTester;
 
+import java.io.FileWriter;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * This class is designed to work with Test Implementer and test generator
@@ -54,24 +60,114 @@ public class TestResultMatrix implements Iterable<SortingClassNode>{
      * @param score of the sorting class.
      */
     public void addResult(String name, int score){
-        for(int i = 0; i < sortingClasses.length; i++){
-            if(name.equals(sortingClasses[i].getName())){
-                sortingClasses[i].addScore(score);
-            }
-        }
-    }
+        SortingClassNode n = getSortClass(name);
+        n.addScore(score);
+
+    }//end add Result
 
     /**
      * A getter for indexed sorting classes
-     * @param index of the sorting class you want
+     * @param name of the sorting class you want
      * @return the sorting class
      */
-    public SortingClassNode getSortClass(int index){
-        return sortingClasses[index];
+    public SortingClassNode getSortClass(String name){
+        for(int i = 0; i < sortingClasses.length; i++){
+            if(name.compareTo(sortingClasses[i].getName())== 0){
+                return sortingClasses[i];
+            }//end if
+        }
+        return null;
     }//end getSortClass
 
     /**
-     * A iterator for the individual sorting classes
+     * Method to get the result from a called class to be return
+     * as an interation
+     * @param name of the class node for the results
+     * @return the iterator for node
+     */
+    public Iterator getResultsIterator(String name){
+        SortingClassNode s = this.getSortingClass(name);
+        return s.iterator();
+
+    }//end getResultsIterator
+
+    /**
+     * Method to return an array list with all the results from the test.
+     * @param name is the name of the class being tested
+     * @return the arraylist with the test results inside
+     */
+    public ArrayList<Integer> getListResults(String name){
+        ArrayList<Integer> a = new ArrayList<>();
+        Iterator iter = getResultsIterator(name);
+        while(iter.hasNext()){
+            a.add((Integer) iter.next());
+        }//end while
+        return a;
+    }//end getListResults
+
+    /**
+     * Method that will generate the file that can be used to
+     * create the graphs for comparing run times.
+     */
+    public void fileGenerator() throws IOException {
+        File testsR = new File("Test_Results_Sort_Algorithms");
+        try {
+            if (testsR.createNewFile()){
+                System.out.println("File is created: " );
+            } else {
+                System.out.println("File exist already");
+            }//end if
+        } catch (IOException e){
+            System.out.println("unable to create/write to file error occured");
+            e.printStackTrace();
+        }//end try
+        FileWriter writeTest = new FileWriter("Test_Results_Sort_Algorithms");
+        writeFile(writeTest);
+    }
+
+    /**
+     * Methode to write to the give file the results of the test
+     * @param f file object
+     * @return boolean value if the writing was successful
+     */
+    private boolean writeFile(FileWriter f) throws IOException {
+        boolean success = false;
+        Iterator<SortingClassNode> sortMethod = this.sortIterator();
+        while(sortMethod.hasNext()){
+            SortingClassNode scn = sortMethod.next();
+            String name = scn.getName();
+            ArrayList results = this.getListResults(name);
+            f.write(name + "\n");
+            int numTest = 1;
+            StringBuilder nums = new StringBuilder();
+            for(int j = 0; j < 5; j++){
+                nums.append("Test # " + numTest + ": ");
+                for(int i = j * 14; i < 14; i++) {
+                    nums.append(results.get(i) + ", ");
+                }//end for
+                nums.append("\n");
+                numTest++;
+            }//end for
+        }//end while
+        f.close();
+        return true;
+    }
+    /**
+     * Method that will recall the sorting class by name and return that sorting class node
+     * @param name is the name of the sorting class
+     * @return the sorting class node
+     */
+    public SortingClassNode getSortingClass(String name){
+        for(int i = 0; i < sortingClasses.length; i++){
+            if(sortingClasses[i].getName().equals(name)){
+                return sortingClasses[i];
+            }//end if
+        }//end for
+        return null;
+    }//end getSortingClass
+
+    /**
+     * An iterator for the individual sorting classes
      * @return the iterator object
      */
     public Iterator<SortingClassNode> sortIterator(){
@@ -80,7 +176,6 @@ public class TestResultMatrix implements Iterable<SortingClassNode>{
 
     /**
      * Returns an iterator over elements of type {@code T}.
-     *
      * @return an Iterator.
      */
     @Override
