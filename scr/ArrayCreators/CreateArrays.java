@@ -1,12 +1,14 @@
+package ArrayCreators;
+
 import java.util.Arrays;
 import java.util.Random;
 
-public class CreateArrays implements CreateArraysInterface{
+public class CreateArrays implements CreateArraysInterface {
 
     // originalArray that contains all the values
-    int[] originalArray;
+    private int[] originalArray;
     // clone to ensure if original is sorted, the rest are not impacted
-    int[] cloneArray;
+    private int[] cloneArray;
 
     /**
      * Constructor for the class, used to specify size and create the original array
@@ -15,6 +17,12 @@ public class CreateArrays implements CreateArraysInterface{
     public CreateArrays(int arraySize) {
         createOriginalArray(arraySize);
         cloneArray = Arrays.copyOf(originalArray, originalArray.length);
+    }
+
+
+    public CreateArrays() {
+        this(4);
+
     }
 
 
@@ -83,4 +91,14 @@ public class CreateArrays implements CreateArraysInterface{
 
         return reversedArray;
     }
+
+    /**
+     * Retrieves the original unsorted array
+     * @return initial unsorted array
+     */
+    @Override
+    public int[] getOriginalArray() {
+        return originalArray;
+    }
+
 }

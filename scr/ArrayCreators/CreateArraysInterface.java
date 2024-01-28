@@ -1,3 +1,5 @@
+package ArrayCreators;
+
 public interface CreateArraysInterface {
 
     /**
@@ -28,4 +30,11 @@ public interface CreateArraysInterface {
      * @return a copy of the array in descending order
      */
     int[] reverseOrder();
+
+
+    /**
+     * Retrieves the original unsorted array
+     * @return initial unsorted array
+     */
+    int[] getOriginalArray();
 }
