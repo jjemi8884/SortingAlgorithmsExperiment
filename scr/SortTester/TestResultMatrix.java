@@ -27,7 +27,7 @@ public class TestResultMatrix implements Iterable<SortingClassNode>{
      * Default constructor with 14 class available
      */
     public TestResultMatrix(){
-        this(14);
+        this(12);
     }//end Constructor
 
     /**
@@ -60,6 +60,7 @@ public class TestResultMatrix implements Iterable<SortingClassNode>{
      * @param score of the sorting class.
      */
     public void addResult(String name, int score){
+        //System.out.println(name + " " + score);
         SortingClassNode n = getSortClass(name);
         n.addScore(score);
 
@@ -133,21 +134,24 @@ public class TestResultMatrix implements Iterable<SortingClassNode>{
     private boolean writeFile(FileWriter f) throws IOException {
         boolean success = false;
         Iterator<SortingClassNode> sortMethod = this.sortIterator();
+        int count = 1;
         while(sortMethod.hasNext()){
             SortingClassNode scn = sortMethod.next();
             String name = scn.getName();
-            ArrayList results = this.getListResults(name);
+            ArrayList<Integer> results = this.getListResults(name);
             f.write(name + "\n");
             int numTest = 1;
             StringBuilder nums = new StringBuilder();
+            //Test #1: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
             for(int j = 0; j < 5; j++){
                 nums.append("Test # " + numTest + ": ");
-                for(int i = j * 14; i < 14; i++) {
+                for(int i = j * 14; i < j * 14 + 14 ; i++) {
                     nums.append(results.get(i) + ", ");
                 }//end for
                 nums.append("\n");
                 numTest++;
             }//end for
+            f.write(nums.toString());
         }//end while
         f.close();
         return true;

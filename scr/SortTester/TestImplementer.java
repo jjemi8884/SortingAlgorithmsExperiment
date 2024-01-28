@@ -32,7 +32,7 @@ public class TestImplementer {
         sortingAlgorithms[7] = new QuickSortMo3();
         sortingAlgorithms[8] = new HeapSort();
         sortingAlgorithms[9] = new Counting();
-        sortingAlgorithms[10] = new BubbleSort();
+        sortingAlgorithms[10] = new BucketSort();
         sortingAlgorithms[11] = new RadixSort();
         this.testGenerator = testGenerator;
         this.testResultMatrix = testResultMatrix;
@@ -50,6 +50,7 @@ public class TestImplementer {
             // Get a new list of 70 test arrays
             ArrayList<int[]> testArrays = testGenerator.getCloneArrayList();
             // Iterate through each test array
+            int count = 0;
             for (int[] array: testArrays) {
                 // Record start time
                 long startTime = System.nanoTime();

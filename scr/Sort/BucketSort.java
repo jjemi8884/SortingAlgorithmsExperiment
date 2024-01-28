@@ -20,7 +20,7 @@ public class BucketSort implements SortInterface {
     @Override
     public void sort(int [] array) {
         //create n buckets []
-        createBuckets(array.length);
+        createBuckets(array.length + 1);
         //insert into buckets and sort buckets with a linked list
         insert(array);
         //concatenate the buckets.

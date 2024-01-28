@@ -37,14 +37,13 @@ public class Counting implements SortInterface{
     /**
      * THis method will sort the array into a new array which will use the index
      * and the newArray to in the proper index in the output array
-     *
      * @param array    the original array
      * @param newArray the index array
      * @return the new output array
      */
     private void sortArray(int [] array, int [] newArray, int [] oldArray){
-        //make new output array to be copied over
-        for(int i = oldArray.length - 1 ; i >= 0; i--){
+        //make a new output array to be copied over
+        for(int i = oldArray.length - 1; i == 0; i--){
             int value = oldArray[i];
             int newIndex = newArray[value] - 1;
             newArray[value]--;

@@ -62,6 +62,7 @@ public class SortingClassNode<T> implements Iterable<Integer> {
      * @param score the integer of the score
      */
     public void addScore(int score){
+        //System.out.println(currentTest);
         this.timeResults[currentTest] = score;
         currentTest++;
     }
@@ -112,7 +113,7 @@ public class SortingClassNode<T> implements Iterable<Integer> {
          * @return
          */
         public boolean hasNext() {
-            return nextIndex >= timeResults.length;
+            return nextIndex <= timeResults.length -1 ;
         }//end hasNext
 
         /**
