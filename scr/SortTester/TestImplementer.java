@@ -32,7 +32,7 @@ public class TestImplementer {
         sortingAlgorithms[7] = new QuickSortMo3();
         sortingAlgorithms[8] = new HeapSort();
         sortingAlgorithms[9] = new Counting();
-        sortingAlgorithms[10] = new BubbleSort();
+        sortingAlgorithms[10] = new BucketSort();
         sortingAlgorithms[11] = new RadixSort();
         this.testGenerator = testGenerator;
         this.testResultMatrix = testResultMatrix;
@@ -57,7 +57,7 @@ public class TestImplementer {
                 sortingClass.sort(array);
                 // Record end time and calculate time in microseconds
                 long endTime = System.nanoTime();
-                long timeElapsed = (endTime - startTime) / 1000;
+                long timeElapsed = (endTime - startTime);
                 // Set time to -1 if sort was not successful
                 if (!confirmSort(array)) {
                     timeElapsed = -1;
