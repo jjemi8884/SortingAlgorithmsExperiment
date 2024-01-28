@@ -28,10 +28,16 @@ public class QuickSortFirst implements SortInterface{
      * @param highPoint the highest index of the array
      */
     public void quickSort(int[] array, int lowPoint, int highPoint) {
-        if (lowPoint < highPoint) {
+
+        // recurse on smaller array
+        while (highPoint > lowPoint) {
             int pivotIdx = partition(array, lowPoint, highPoint);
-            quickSort(array, lowPoint, pivotIdx - 1);
-            quickSort(array, pivotIdx + 1, highPoint);
+            if ((pivotIdx - lowPoint) <= (highPoint-pivotIdx)) {
+                quickSort(array, lowPoint, pivotIdx - 1);
+            } else {
+                quickSort(array, pivotIdx + 1, highPoint);
+            }
+            highPoint = pivotIdx - 1;
 
         }
     }
