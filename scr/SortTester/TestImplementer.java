@@ -50,7 +50,6 @@ public class TestImplementer {
             // Get a new list of 70 test arrays
             ArrayList<int[]> testArrays = testGenerator.getCloneArrayList();
             // Iterate through each test array
-            int count = 0;
             for (int[] array: testArrays) {
                 // Record start time
                 long startTime = System.nanoTime();
@@ -58,7 +57,7 @@ public class TestImplementer {
                 sortingClass.sort(array);
                 // Record end time and calculate time in microseconds
                 long endTime = System.nanoTime();
-                long timeElapsed = (endTime - startTime) / 1000;
+                long timeElapsed = (endTime - startTime);
                 // Set time to -1 if sort was not successful
                 if (!confirmSort(array)) {
                     timeElapsed = -1;
