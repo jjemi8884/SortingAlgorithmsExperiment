@@ -140,13 +140,15 @@ public class TestResultMatrix implements Iterable<SortingClassNode>{
             String name = scn.getName();
             ArrayList<Integer> results = this.getListResults(name);
             f.write(name + "\n");
-            int numTest = 1;
+            int numTest = 0;
+            ArrayList<String> test = getTestNames();
             StringBuilder nums = new StringBuilder();
             //Test #1: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
             for(int j = 0; j < 5; j++){
-                nums.append("Test # " + numTest + ": ");
+                nums.append(test.get(numTest));
                 for(int i = j * 14; i < j * 14 + 14 ; i++) {
-                    nums.append(results.get(i) + ", ");
+                    double number = results.get(i) / 1000.0;
+                    nums.append(number + ", ");
                 }//end for
                 nums.append("\n");
                 numTest++;
@@ -156,6 +158,21 @@ public class TestResultMatrix implements Iterable<SortingClassNode>{
         f.close();
         return true;
     }
+
+    /**
+     * This method is to get the test names to be placed in the
+     * output report
+     * @return ArrayList with the names of the test.
+     */
+    public ArrayList<String> getTestNames(){
+        ArrayList<String> s = new ArrayList<>();
+        s.add("Random ,");
+        s.add("50% Sorted ,");
+        s.add("75% Sorted ,");
+        s.add("Full Sorted ,");
+        s.add("Sorted in Reverse ,");
+        return s;
+    }//end getTestNames
     /**
      * Method that will recall the sorting class by name and return that sorting class node
      * @param name is the name of the sorting class
