@@ -2,14 +2,6 @@ package Sort;
 
 public class HeapSort implements SortInterface{
 
-//    /**
-//     * Will call the sort method with the passed in array
-//     * @param array array of integers to be sorted
-//     */
-//    public HeapSort(int[] array) {
-//        this.sort(array);
-//    }// end HeapSort constructor
-
     /**
      * The main call to sort the given array of integers
      * @param array of integers to be sorted.
@@ -28,8 +20,8 @@ public class HeapSort implements SortInterface{
             array[0] = temp;
             size--;
             heapify(array, size, 0);
-        } // end for
-    } // end sort
+        }
+    }
 
     /**
      * Creates a max heap from an unsorted array by calling heapify each non-leaf node
@@ -39,8 +31,8 @@ public class HeapSort implements SortInterface{
         // loop through each non-leaf node, starting with the last, and heapify each
         for (int i = (array.length/2) - 1; i >= 0; i--) {
             heapify(array, array.length, i);
-        } // end for
-    }// end buildMaxHeap
+        }
+    }
 
     /**
      * Performs heapify on the given node, swaping nodes so that it resembles a max heap
@@ -64,7 +56,7 @@ public class HeapSort implements SortInterface{
                 largerChild = leftChild;
             } else {
                 largerChild = rightChild;
-            } // end if
+            }
 
             // if the larger child is larger than it's parent node, swap those node's values,
             // and then heapify the larger child node
@@ -73,7 +65,7 @@ public class HeapSort implements SortInterface{
                 array[root] = array[largerChild];
                 array[largerChild] = temp;
                 heapify(array, size, largerChild);
-            } // end if
-        } // end if
-    } // end heapify
+            }
+        }
+    }
 }

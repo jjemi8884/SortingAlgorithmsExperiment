@@ -40,14 +40,6 @@ public class main {
         }//end for
 
     }//end createMatrix
-    public static int [] testArray() {
-        int[] array = new int[10];
-        Random r = new Random();
-        for (int i = 0; i < array.length; i++) {
-            array[i] = r.nextInt(40000);
-        }//end for
-        return array;
-    }
 
     /**
      * Method to print the array for troubleshooting

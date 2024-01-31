@@ -3,7 +3,6 @@ package Sort;
 public class BubbleSort implements SortInterface{
     /**
      * The main call to sort the given array of integers
-     *
      * @param array of integers to be sorted.
      */
     @Override
@@ -17,8 +16,8 @@ public class BubbleSort implements SortInterface{
                     int temp = array[j];
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
-                } // end if
-            } // end for
-        } // end for
-    } // end sort
+                }
+            }
+        }
+    }
 }

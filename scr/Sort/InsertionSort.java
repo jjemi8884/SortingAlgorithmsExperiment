@@ -2,18 +2,8 @@ package Sort;
 
 public class InsertionSort implements SortInterface {
 
-//    /**
-//     * Uses the passed in array to call a sort on the integers
-//     * @param array an array of integers
-//     */
-//    public InsertionSort(int[] array) {
-//        this.sort(array);
-//    }
-
-
     /**
      * The main call to sort the given array of integers
-     *
      * @param array of integers to be sorted.
      */
     @Override
@@ -29,7 +19,5 @@ public class InsertionSort implements SortInterface {
             } // end while loop
             array[precedingIdx + 1] = currentVal;
         } // end for loop
-
-
     }  // end sort method
 } // end class

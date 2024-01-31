@@ -6,7 +6,6 @@ public class QuickSortRandom implements SortInterface{
 
     /**
      * The main call to sort the given array of integers
-     *
      * @param array of integers to be sorted.
      */
     @Override
@@ -16,7 +15,6 @@ public class QuickSortRandom implements SortInterface{
 
     /**
      * Method to recursively call to further quicksort the left and right side of pivot index
-     *
      * @param array to be sorted
      * @param low index of current sub-array
      * @param high index of current sub-array
@@ -29,7 +27,6 @@ public class QuickSortRandom implements SortInterface{
             int pivot = partitioning(array, low, high);
             sort(array, low, pivot - 1);
             sort(array, pivot + 1, high);
-
         }
     }
 

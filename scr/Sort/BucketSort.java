@@ -5,14 +5,6 @@ public class BucketSort implements SortInterface {
     private int [] negativeArray; // for future use
     private static final int LARGESTNUMBER = 40000; // the largest number that will be pulled
 
-//    /**
-//     * this will initialize the array used in the class
-//     * @param array array of integers
-//     */
-//    public BucketSort(int [] array ){
-//
-//    }//end bucket sort constructor
-
     /**
      * The sort the given array of integers
      * @param array of integers to be sorted.
@@ -121,7 +113,6 @@ public class BucketSort implements SortInterface {
             this(data, null);
         }//end node constructor
 
-
         /**
          * The second node constructor which allows for assignment
          * of the next link.
@@ -135,7 +126,7 @@ public class BucketSort implements SortInterface {
 
         /**
          * Getter for the data in the node
-         * @return
+         * @return data
          */
         public int getData(){
             return data;

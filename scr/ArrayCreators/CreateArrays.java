@@ -19,12 +19,9 @@ public class CreateArrays implements CreateArraysInterface {
         cloneArray = Arrays.copyOf(originalArray, originalArray.length);
     }
 
-
     public CreateArrays() {
         this(4);
-
     }
-
 
     /**
      * Creates an array of specified size, with random integers 0 - 40,000 populating it
@@ -73,7 +70,6 @@ public class CreateArrays implements CreateArraysInterface {
         Arrays.sort(threeFourthSortedArray, 0, threeFourthPoint);
         return threeFourthSortedArray;
     }
-
 
     /**
      * Creates a copy of the clone array that is sorted, reversing the indices, so it is in descending order

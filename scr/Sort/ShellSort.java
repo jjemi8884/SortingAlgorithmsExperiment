@@ -1,15 +1,10 @@
 package Sort;
 
 public class ShellSort implements SortInterface {
-//
-//    public ShellSort(int[] a) {
-//        sort(a);
-//    }
 
     /**
      * Method to iterate through the list a certain distance between indexes
      * becoming smaller all the time until space is less than 1
-     *
      * @param a         array that will be used to index and sort
      */
     @Override

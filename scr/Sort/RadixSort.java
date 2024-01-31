@@ -3,9 +3,9 @@ package Sort;
 import java.util.ArrayList;
 
 public class RadixSort implements SortInterface{
+
     /**
      * The main call to sort the given array of integers
-     *
      * @param array of integers to be sorted.
      */
     @Override
@@ -35,7 +35,6 @@ public class RadixSort implements SortInterface{
                 }
             }
         }
-
     }
 
     /**

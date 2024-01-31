@@ -34,6 +34,7 @@ public class TestImplementer {
         sortingAlgorithms[9] = new Counting();
         sortingAlgorithms[10] = new BucketSort();
         sortingAlgorithms[11] = new RadixSort();
+
         this.testGenerator = testGenerator;
         this.testResultMatrix = testResultMatrix;
     }
@@ -70,7 +71,6 @@ public class TestImplementer {
 
     /**
      * Checks that the array was sorted
-     *
      * @param array to check
      * @return {@code true} if the array has been sorted
      */

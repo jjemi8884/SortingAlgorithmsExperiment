@@ -5,20 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ba60e6f-2e5f-44cf-b657-33ee8bb06125" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr/SortTest/BubbleSortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr/SortTest/HeapSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph Anaysis of Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Anaysis of Data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SortingAlgorithmsExperiment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SortingAlgorithmsExperiment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test_Results_Sort_Algorithms" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Results_Sort_Algorithms" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/ArrayCreators/CreateArrays.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/ArrayCreators/CreateArrays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/ArrayCreators/CreateArraysInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/ArrayCreators/CreateArraysInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/BubbleSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/BucketSort$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/BucketSort$Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/BucketSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/BucketSort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/Counting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/Counting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/HeapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/HeapSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/InsertionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/MergeSort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/QuickSortFirst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/QuickSortFirst.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/QuickSortMo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/QuickSortMo3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/QuickSortRandom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/QuickSortRandom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/RadixSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/RadixSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/SelectionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/ShellSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/ShellSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/SortInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/SortInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/SortingClassNode$IteratorForSortNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/SortingClassNode$IteratorForSortNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/SortingClassNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/SortingClassNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestImplementer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestImplementer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestResultMatrix$SortClassIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestResultMatrix$SortClassIterator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestResultMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestResultMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/ArrayCreators/CreateArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/ArrayCreators/CreateArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/Sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Sort/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/Sort/BucketSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Sort/BucketSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scr/Sort/Counting.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Sort/Counting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/Sort/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Sort/HeapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/Sort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Sort/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/Sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Sort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/Sort/QuickSortFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Sort/QuickSortFirst.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scr/Sort/QuickSortMo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Sort/QuickSortMo3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/Sort/QuickSortRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Sort/QuickSortRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/Sort/RadixSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Sort/RadixSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/Sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Sort/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/Sort/ShellSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/Sort/ShellSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/SortTester/SortingClassNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/SortTester/SortingClassNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/SortTester/TestGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/SortTester/TestGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/SortTester/TestImplementer.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/SortTester/TestImplementer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/SortTester/TestResultMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/SortTester/TestResultMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +70,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -38,6 +80,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2bVPb8yJiQBE1ApQc2so9GZqiMN" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,11 +95,26 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
+    "JUnit.BubbleSortTest.executor": "Run",
+    "JUnit.BubbleSortTest.sort.executor": "Run",
+    "JUnit.HeapSortTest.buildMaxHeap.executor": "Coverage",
+    "JUnit.HeapSortTest.executor": "Coverage",
+    "JUnit.HeapSortTest.sort.executor": "Coverage",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/jjemi/Documents/CSB302/project1/SortingAlgorithmsExperiment",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -63,9 +124,106 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "coverage",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Sort" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.main">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="SortingAlgorithmsExperiment" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BubbleSortTest.sort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortingAlgorithmsExperiment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SortTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SortTest" />
+      <option name="MAIN_CLASS_NAME" value="SortTest.BubbleSortTest" />
+      <option name="METHOD_NAME" value="sort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeapSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortingAlgorithmsExperiment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SortTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SortTest" />
+      <option name="MAIN_CLASS_NAME" value="SortTest.HeapSortTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeapSortTest.buildMaxHeap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortingAlgorithmsExperiment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SortTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SortTest" />
+      <option name="MAIN_CLASS_NAME" value="SortTest.HeapSortTest" />
+      <option name="METHOD_NAME" value="buildMaxHeap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeapSortTest.sort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortingAlgorithmsExperiment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SortTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SortTest" />
+      <option name="MAIN_CLASS_NAME" value="SortTest.HeapSortTest" />
+      <option name="METHOD_NAME" value="sort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+        <item itemvalue="JUnit.HeapSortTest" />
+        <item itemvalue="JUnit.HeapSortTest.buildMaxHeap" />
+        <item itemvalue="JUnit.HeapSortTest.sort" />
+        <item itemvalue="JUnit.BubbleSortTest.sort" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-e1d2075fd9a7-b4911678" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -100,5 +258,19 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SortingAlgorithmsExperiment$HeapSortTest_buildMaxHeap.ic" NAME="HeapSortTest.buildMaxHeap Coverage Results" MODIFIED="1706730091038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Sort.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SortingAlgorithmsExperiment$BubbleSortTest_sort.ic" NAME="BubbleSortTest.sort Coverage Results" MODIFIED="1706729061151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Sort.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SortingAlgorithmsExperiment$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1706730551073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Sort.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SortingAlgorithmsExperiment$HeapSortTest_sort.ic" NAME="HeapSortTest.sort Coverage Results" MODIFIED="1706729814271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Sort.*</FILTER>
+    </SUITE>
   </component>
 </project>

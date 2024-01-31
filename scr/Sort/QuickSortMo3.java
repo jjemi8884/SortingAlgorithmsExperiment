@@ -10,15 +10,6 @@ public class QuickSortMo3 implements SortInterface{
      */
     private static final int MAX_SIZE = 10;
 
-//    /**
-//     * The constructor will automatically take in the array and sort the array in the correct
-//     * ascending order.
-//     * @param array of integers in any pattern.
-//     */
-//    public QuickSortMo3(int[] array){
-//        this.sort( array);
-//    }//end QuickSortMo3
-
     /**
      * Helper method for the recursive sort call
      * @param array of integers to be sorted.

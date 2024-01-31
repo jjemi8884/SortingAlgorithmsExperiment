@@ -4,18 +4,8 @@ import java.util.Arrays;
 
 public class MergeSort implements SortInterface {
 
-//    /**
-//     * Uses the passed in array and calls a sort on it
-//     * @param arrayOfInts an array of integers
-//     */
-//    public MergeSort(int[] arrayOfInts) {
-//        this.sort(arrayOfInts);
-//    }
-
-
     /**
      * The main call to sort the given array of integers
-     *
      * @param array of integers to be sorted.
      */
     @Override
@@ -31,7 +21,6 @@ public class MergeSort implements SortInterface {
             sort(rightHalf);
             // takes those new "halves" and merges them, while sorting
             mergeArrays(leftHalf, rightHalf, array);
-
         }
     }
 
@@ -69,8 +58,5 @@ public class MergeSort implements SortInterface {
                 array[leftIdx + rightIdx] = rightSide[rightIdx];
                 rightIdx++;
             }
-
     } // end mergeArrays
-
-
 }

@@ -2,17 +2,8 @@ package Sort;
 
 public class SelectionSort implements SortInterface{
 
-//    /**
-//     * Uses the passed in array to call sort on the integers
-//     * @param array an array of integers
-//     */
-//    public SelectionSort(int[] array) {
-//        this.sort(array);
-//    }
-
     /**
      * The main call to sort the given array of integers
-     *
      * @param array of integers to be sorted.
      */
     @Override
@@ -34,5 +25,4 @@ public class SelectionSort implements SortInterface{
             array[idx] = minVal;
         } // end outer for loop
     } // end sort method
-
 } // end class
