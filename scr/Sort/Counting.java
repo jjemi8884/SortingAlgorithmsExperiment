@@ -25,7 +25,7 @@ public class Counting implements SortInterface{
         int[] temp= new int [array.length];
         if(array != null) {
             //find the max
-            int max = findMax(array, temp);
+            int max = 40000;//findMax(array, temp);
             //make the new array
             int [] newArray = new int[max + 1];
             countArray(array, newArray);
