@@ -10,13 +10,26 @@ public class TestGenerator{
 
     // private reference to the original ArrayList
     private ArrayList<int[]> originalArrayList;
+    private ArrayList<int[]> orderedArrayList;
 
     /**
      * Constructor method, creates a test generator, and all the arrays within
      */
     public TestGenerator() {
         originalArrayList = new ArrayList<>(70);
+        orderedArrayList = new ArrayList<>(70);
         populateArrays();
+    }
+
+    /**
+     * Method to reajust the array
+     */
+    public void orderList(){
+        for(int i = 0; i < 5; i++){
+            for(int j = 0; j < originalArrayList.size(); j += 5){
+                orderedArrayList.add(originalArrayList.get(j));
+            }
+        }
     }
 
     /**
@@ -33,7 +46,10 @@ public class TestGenerator{
             originalArrayList.add(arrayCreator.reverseOrder());
             power++;
         }
+        orderList();
     }
+
+
 
     /**
      * Retrieves a clone of the original ArrayList for the caller to use without fear of modifying the original ArrayList
@@ -41,7 +57,7 @@ public class TestGenerator{
      * @return clone of the ArrayList (and its integer arrays)
      */
     public ArrayList<int[]> getCloneArrayList() {
-        ArrayList<int[]> arrayListCopy = new ArrayList<>(originalArrayList);
+        ArrayList<int[]> arrayListCopy = new ArrayList<>(orderedArrayList);
         return arrayListCopy;
     }
 }
