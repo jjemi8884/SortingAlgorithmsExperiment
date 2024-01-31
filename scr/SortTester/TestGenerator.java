@@ -22,7 +22,7 @@ public class TestGenerator{
     }
 
     /**
-     * Method to reajust the array
+     * Method to readjust the array
      */
     public void orderList(){
         for(int i = 0; i < 5; i++){
