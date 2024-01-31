@@ -2,17 +2,6 @@ package Sort;
 
 public class Counting implements SortInterface{
 
-
-
-    /**
-     * constructor for the counting sort class that will accept an array
-     * this class only manipulated the array and does not return anything else.
-     * @param a is the array that will be passed to the class for sorting
-     */
-    public Counting(){
-
-    }
-
     /**
      * The main call to sort the given array of integers
      * This method is not efficient unless there is a large frequency

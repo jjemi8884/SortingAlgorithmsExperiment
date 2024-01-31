@@ -2,18 +2,8 @@ package Sort;
 
 public class QuickSortFirst implements SortInterface{
 
-//    /**
-//     * Calls a quick sort onto the passed in array
-//     * @param intArray array of integers
-//     */
-//    public QuickSortFirst(int[] intArray) {
-//        this.sort(intArray);
-//    }
-
-
     /**
      * The main call to sort the given array of integers
-     *
      * @param array of integers to be sorted.
      */
     @Override
@@ -38,7 +28,6 @@ public class QuickSortFirst implements SortInterface{
                 quickSort(array, pivotIdx + 1, highPoint);
             }
             highPoint = pivotIdx - 1;
-
         }
     }
 

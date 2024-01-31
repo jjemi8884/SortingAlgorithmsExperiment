@@ -63,7 +63,6 @@ public class TestResultMatrix implements Iterable<SortingClassNode>{
         //System.out.println(name + " " + score);
         SortingClassNode n = getSortClass(name);
         n.addScore(score);
-
     }//end add Result
 
     /**
@@ -89,7 +88,6 @@ public class TestResultMatrix implements Iterable<SortingClassNode>{
     public Iterator getResultsIterator(String name){
         SortingClassNode s = this.getSortingClass(name);
         return s.iterator();
-
     }//end getResultsIterator
 
     /**
@@ -173,6 +171,7 @@ public class TestResultMatrix implements Iterable<SortingClassNode>{
         s.add("Sorted in Reverse ,");
         return s;
     }//end getTestNames
+
     /**
      * Method that will recall the sorting class by name and return that sorting class node
      * @param name is the name of the sorting class

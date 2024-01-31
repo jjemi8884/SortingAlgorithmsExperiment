@@ -38,7 +38,6 @@ public class SortingClassNode<T> implements Iterable<Integer> {
         this.sortClassName = name;
         this.timeResults = new Integer[numOfTest];
         this.currentTest = 0;
-
     }//end constructor
 
     /**
@@ -66,6 +65,7 @@ public class SortingClassNode<T> implements Iterable<Integer> {
         this.timeResults[currentTest] = score;
         currentTest++;
     }
+
     /**
      * Returns an iterator over elements of type {@code T}.
      * @return an Iterator.
@@ -98,6 +98,7 @@ public class SortingClassNode<T> implements Iterable<Integer> {
         }//end while
         return result.toString();
     }//end toString()
+
     private class IteratorForSortNode implements Iterator<Integer> {
         private int nextIndex;
 
@@ -129,6 +130,4 @@ public class SortingClassNode<T> implements Iterable<Integer> {
             return result;
         }//end next
     }//end iterator class
-
-
 }

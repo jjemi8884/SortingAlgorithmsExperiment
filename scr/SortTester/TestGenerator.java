@@ -11,14 +11,12 @@ public class TestGenerator{
     // private reference to the original ArrayList
     private ArrayList<int[]> originalArrayList;
 
-
     /**
      * Constructor method, creates a test generator, and all the arrays within
      */
     public TestGenerator() {
         originalArrayList = new ArrayList<>(70);
         populateArrays();
-
     }
 
     /**
@@ -46,5 +44,4 @@ public class TestGenerator{
         ArrayList<int[]> arrayListCopy = new ArrayList<>(originalArrayList);
         return arrayListCopy;
     }
-
 }
