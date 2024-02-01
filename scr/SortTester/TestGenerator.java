@@ -26,7 +26,7 @@ public class TestGenerator{
      */
     public void orderList(){
         for(int i = 0; i < 5; i++){
-            for(int j = 0; j < originalArrayList.size(); j += 5){
+            for(int j = i; j < originalArrayList.size(); j += 5){
                 orderedArrayList.add(originalArrayList.get(j));
             }
         }
