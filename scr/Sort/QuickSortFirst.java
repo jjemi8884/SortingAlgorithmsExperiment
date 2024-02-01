@@ -24,10 +24,13 @@ public class QuickSortFirst implements SortInterface{
             int pivotIdx = partition(array, lowPoint, highPoint);
             if ((pivotIdx - lowPoint) <= (highPoint-pivotIdx)) {
                 quickSort(array, lowPoint, pivotIdx - 1);
+                lowPoint = pivotIdx + 1;
             } else {
                 quickSort(array, pivotIdx + 1, highPoint);
+                highPoint = pivotIdx - 1;
             }
-            highPoint = pivotIdx - 1;
+
+
         }
     }
 
