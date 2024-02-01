@@ -20,9 +20,10 @@ public class RadixSort implements SortInterface{
         ArrayList<Integer>[] buckets = createBuckets();
         // Loop through each digit starting from the far right until the last digit
         for (int i = 0; i < maxDigits; i++) {
+            int temp = (int) Math.pow(10, i);
             // Iterate through array, and add elements to buckets based on their digits
             for (int number: array) {
-                int digit = (number / (int) Math.pow(10, i)) % 10;
+                int digit = (number / temp) % 10;
                 buckets[digit].add(number);
             }
 
