@@ -14,10 +14,10 @@ public class Counting implements SortInterface{
         int[] temp= new int [array.length];
         if(array != null) {
             //find the max
-            int max = 40000;//findMax(array, temp);
+            int max = findMax(temp, array);
             //make the new array
             int [] newArray = new int[max + 1];
-            countArray(array, newArray);
+            countArray(temp, newArray);
             cumulativeSum(newArray);
             sortArray(array, newArray, temp);
         }//end if
