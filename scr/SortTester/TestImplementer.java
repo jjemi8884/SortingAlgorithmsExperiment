@@ -50,6 +50,9 @@ public class TestImplementer {
             name = name.substring(5,name.length());
             // Get a new list of 70 test arrays
             ArrayList<int[]> testArrays = testGenerator.getCloneArrayList();
+            // Run warmup sort to make times accurate (JIT Compilation Overhead)
+            for (int i = 0; i < 10; i++)
+                sortingClass.sort(new int[5]);
             // Iterate through each test array
             for (int[] array: testArrays) {
                 // Record start time
