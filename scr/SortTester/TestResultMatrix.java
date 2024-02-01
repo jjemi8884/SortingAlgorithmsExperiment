@@ -154,6 +154,7 @@ public class TestResultMatrix implements Iterable<SortingClassNode>{
             f.write(nums.toString());
         }//end while
         f.close();
+        System.out.println("Success, Test results saved");
         return true;
     }
 
