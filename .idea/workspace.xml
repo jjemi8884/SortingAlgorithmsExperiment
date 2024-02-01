@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba60e6f-2e5f-44cf-b657-33ee8bb06125" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Graph.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Results_Sort_Algorithms" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Results_Sort_Algorithms" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/ArrayCreators/CreateArrays.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/ArrayCreators/CreateArrays.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/ArrayCreators/CreateArraysInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/ArrayCreators/CreateArraysInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/BubbleSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/BucketSort$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/BucketSort$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/BucketSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/BucketSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/Counting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/Counting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/HeapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/HeapSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/InsertionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/MergeSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/QuickSortFirst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/QuickSortFirst.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/QuickSortMo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/QuickSortMo3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/QuickSortRandom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/QuickSortRandom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/RadixSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/RadixSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/SelectionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/ShellSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/ShellSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/SortInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/Sort/SortInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTest/BubbleSortTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTest/BubbleSortTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTest/HeapSortTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTest/HeapSortTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/SortingClassNode$IteratorForSortNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/SortingClassNode$IteratorForSortNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/SortingClassNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/SortingClassNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestImplementer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestImplementer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestResultMatrix$SortClassIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestResultMatrix$SortClassIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestResultMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/SortTester/TestResultMatrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SortingAlgorithmsExperiment/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr/SortTester/TestGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr/SortTester/TestGenerator.java" afterDir="false" />
-    </list>
+    <list default="true" id="8ba60e6f-2e5f-44cf-b657-33ee8bb06125" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
