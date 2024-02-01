@@ -5,6 +5,7 @@ package SortTester;
 import ArrayCreators.CreateArrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class TestGenerator{
 
@@ -57,7 +58,10 @@ public class TestGenerator{
      * @return clone of the ArrayList (and its integer arrays)
      */
     public ArrayList<int[]> getCloneArrayList() {
-        ArrayList<int[]> arrayListCopy = new ArrayList<>(orderedArrayList);
+        ArrayList<int[]> arrayListCopy = new ArrayList<>();
+        for (int[] array: orderedArrayList) {
+            arrayListCopy.add(Arrays.copyOf(array, array.length));
+        }
         return arrayListCopy;
     }
 }
