@@ -8,7 +8,7 @@ public class QuickSortMo3 implements SortInterface{
      * Used for setting the size for when the insertion sort will take over from
      * the quick sort. The lowest it can go is four, were it is not recommended to go above 10.
      */
-    private static final int MAX_SIZE = 10;
+    private static final int MAX_SIZE = 4;
 
     /**
      * Helper method for the recursive sort call
