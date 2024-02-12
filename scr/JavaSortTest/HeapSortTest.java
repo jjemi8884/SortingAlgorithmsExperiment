@@ -1,4 +1,4 @@
-package SortTest;
+package JavaSortTest;
 
 import Sort.HeapSort;
 import org.junit.jupiter.api.Test;

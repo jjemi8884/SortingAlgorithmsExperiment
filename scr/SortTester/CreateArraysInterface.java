@@ -1,4 +1,4 @@
-package ArrayCreators;
+package SortTester;
 
 public interface CreateArraysInterface {
 

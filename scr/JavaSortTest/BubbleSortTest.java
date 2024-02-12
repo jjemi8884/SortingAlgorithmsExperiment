@@ -1,4 +1,4 @@
-package SortTest;
+package JavaSortTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 

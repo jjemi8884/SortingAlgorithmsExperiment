@@ -109,18 +109,18 @@ public class TestResultMatrix implements Iterable<SortingClassNode>{
      * create the graphs for comparing run times.
      */
     public void fileGenerator() throws IOException {
-        File testsR = new File("Test_Results_Sort_Algorithms");
+        File testsR = new File("TestResults/Test_Results_Sort_Algorithms");
         try {
             if (testsR.createNewFile()){
                 System.out.println("File is created: " );
             } else {
-                System.out.println("File exist already");
+                System.out.println("File updated");
             }//end if
         } catch (IOException e){
-            System.out.println("unable to create/write to file error occured");
+            System.out.println("unable to create/write to file error occurred");
             e.printStackTrace();
         }//end try
-        FileWriter writeTest = new FileWriter("Test_Results_Sort_Algorithms");
+        FileWriter writeTest = new FileWriter("TestResults/Test_Results_Sort_Algorithms");
         writeFile(writeTest);
     }
 
